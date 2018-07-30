@@ -42,3 +42,6 @@ project(":org.compiere.lookups").projectDir = file("subprojects/org.compiere.loo
 
 include "org.compiere.rule"
 project(":org.compiere.rule").projectDir = file("subprojects/org.compiere.rule")
+
+include "org.compiere.product"
+project(":org.compiere.product").projectDir = file("subprojects/org.compiere.product")
