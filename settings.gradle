@@ -57,3 +57,6 @@ project(":org.compiere.conversionrate").projectDir = file("subprojects/org.compi
 
 include "org.compiere.wf"
 project(":org.compiere.wf").projectDir = file("subprojects/org.compiere.wf")
+
+include "org.compiere.server"
+project(":org.compiere.server").projectDir = file("subprojects/org.compiere.server")
