@@ -9,3 +9,6 @@ project(":org.idempiere.icommon").projectDir = file("subprojects/org.idempiere.i
 
 include "org.idempiere.common"
 project(":org.idempiere.common").projectDir = file("subprojects/org.idempiere.common")
+
+include "org.compiere.model"
+project(":org.compiere.model").projectDir = file("subprojects/org.compiere.model")
