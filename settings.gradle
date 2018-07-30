@@ -66,3 +66,6 @@ project(":org.compiere.validation").projectDir = file("subprojects/org.compiere.
 
 include "org.adempiere.osgi"
 project(":org.adempiere.osgi").projectDir = file("subprojects/org.adempiere.osgi")
+
+include "org.compiere.util"
+project(":org.compiere.util").projectDir = file("subprojects/org.compiere.util")
