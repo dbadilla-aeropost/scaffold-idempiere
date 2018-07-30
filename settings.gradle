@@ -72,3 +72,6 @@ project(":org.compiere.util").projectDir = file("subprojects/org.compiere.util")
 
 include "software.hsharp.business.models"
 project(":software.hsharp.business.models").projectDir = file("subprojects/software.hsharp.business.models")
+
+include "org.adempiere.exceptions"
+project(":org.adempiere.exceptions").projectDir = file("subprojects/org.adempiere.exceptions")
