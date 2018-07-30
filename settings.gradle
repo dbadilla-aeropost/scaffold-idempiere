@@ -45,3 +45,6 @@ project(":org.compiere.rule").projectDir = file("subprojects/org.compiere.rule")
 
 include "org.compiere.product"
 project(":org.compiere.product").projectDir = file("subprojects/org.compiere.product")
+
+include "org.compiere.order"
+project(":org.compiere.order").projectDir = file("subprojects/org.compiere.order")
