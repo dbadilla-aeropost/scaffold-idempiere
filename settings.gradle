@@ -69,3 +69,6 @@ project(":org.adempiere.osgi").projectDir = file("subprojects/org.adempiere.osgi
 
 include "org.compiere.util"
 project(":org.compiere.util").projectDir = file("subprojects/org.compiere.util")
+
+include "software.hsharp.business.models"
+project(":software.hsharp.business.models").projectDir = file("subprojects/software.hsharp.business.models")
