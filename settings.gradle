@@ -21,3 +21,6 @@ project(":org.idempiere.orm").projectDir = file("subprojects/org.idempiere.orm")
 
 include "org.compiere.orm"
 project(":org.compiere.orm").projectDir = file("subprojects/org.compiere.orm")
+
+include "rg.compiere.crm"
+project(":rg.compiere.crm").projectDir = file("subprojects/rg.compiere.crm")
