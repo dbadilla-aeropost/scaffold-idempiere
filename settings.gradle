@@ -18,3 +18,6 @@ project(":software.hsharp.core.models").projectDir = file("subprojects/software.
 
 include "org.idempiere.orm"
 project(":org.idempiere.orm").projectDir = file("subprojects/org.idempiere.orm")
+
+include "org.compiere.orm"
+project(":org.compiere.orm").projectDir = file("subprojects/org.compiere.orm")
