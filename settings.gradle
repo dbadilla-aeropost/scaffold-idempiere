@@ -87,3 +87,6 @@ project(":software.hsharp.db.postgresql.provider").projectDir = file("subproject
 
 include "org.compiere.lookups"
 project(":org.compiere.lookups").projectDir = file("subprojects/org.compiere.lookups")
+
+include "org.compiere.rule"
+project(":org.compiere.rule").projectDir = file("subprojects/org.compiere.rule")
