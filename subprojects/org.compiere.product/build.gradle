@@ -10,6 +10,8 @@ dependencies {
     compile group: 'org.osgi', name: 'org.osgi.service.cm', version: '1.5.0'
     // https://mvnrepository.com/artifact/javax.mail/mail
     compile group: 'javax.mail', name: 'mail', version: '1.4.7'
+    // https://mvnrepository.com/artifact/org.osgi/org.osgi.annotation
+    compileOnly group: 'org.osgi', name: 'org.osgi.annotation', version: '6.0.0'
 
     compile project(':org.idempiere.icommon')
     compile files('../org.idempiere.icommon/bin')

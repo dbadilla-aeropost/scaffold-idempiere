@@ -16,7 +16,9 @@ dependencies {
     // https://mvnrepository.com/artifact/org.osgi/org.osgi.service.cm
     compile group: 'org.osgi', name: 'org.osgi.service.cm', version: '1.5.0'   
     // https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api
-    compile group: 'javax.xml.bind', name: 'jaxb-api', version: '2.3.0'     
+    compile group: 'javax.xml.bind', name: 'jaxb-api', version: '2.3.0'    
+    // https://mvnrepository.com/artifact/org.osgi/org.osgi.annotation
+    compileOnly group: 'org.osgi', name: 'org.osgi.annotation', version: '6.0.0'
 
     compile files('./bsh-2.0b6.jar')
     compile files('./cron4j-2.2.5.jar')

@@ -87,3 +87,6 @@ project(":software.hsharp.api.icommon").projectDir = file("subprojects/software.
 
 include "org.adempiere.install"
 project(":org.adempiere.install").projectDir = file("subprojects/org.adempiere.install")
+
+include "com.aeropost.oms.restapi.order"
+project(":com.aeropost.oms.restapi.order").projectDir = file("subprojects/com.aeropost.oms.restapi.order")

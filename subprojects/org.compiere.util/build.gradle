@@ -5,6 +5,9 @@ dependencies {
     compile project(':org.compiere.model')
     compile files('../org.compiere.model/bin')
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    
+    // https://mvnrepository.com/artifact/org.osgi/org.osgi.annotation
+    compileOnly group: 'org.osgi', name: 'org.osgi.annotation', version: '6.0.0'
 
 }
 buildscript {

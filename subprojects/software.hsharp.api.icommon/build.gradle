@@ -13,6 +13,8 @@ repositories {
 }
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    // https://mvnrepository.com/artifact/org.osgi/org.osgi.annotation
+    compileOnly group: 'org.osgi', name: 'org.osgi.annotation', version: '6.0.0'
 }
 compileKotlin {
     kotlinOptions {

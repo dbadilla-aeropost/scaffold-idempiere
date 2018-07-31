@@ -22,6 +22,9 @@ dependencies {
 
     // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
     compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.4'
+    
+    // https://mvnrepository.com/artifact/org.osgi/org.osgi.annotation
+    compileOnly group: 'org.osgi', name: 'org.osgi.annotation', version: '6.0.0'
 
 }
 compileKotlin {

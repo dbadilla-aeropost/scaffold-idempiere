@@ -1,5 +1,8 @@
 dependencies {
     compile group: 'org.osgi', name: 'org.osgi.service.event', version: '1.3.1'
+    
+    // https://mvnrepository.com/artifact/org.osgi/org.osgi.annotation
+    compileOnly group: 'org.osgi', name: 'org.osgi.annotation', version: '6.0.0'
 
     compile project(':org.idempiere.icommon')
     compile files('../org.idempiere.icommon/bin')

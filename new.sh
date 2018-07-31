@@ -11,10 +11,10 @@ java -jar ./tools/bnd/dist/bnd.jar -b ./subprojects add project "$1"
 # Create gradle sub project layout (customized in root build.gradle)
 touch ./subprojects/"$1"/build.gradle
 mkdir ./subprojects/"$1"/src/java
-mkdir ./subprojects/"$1"/src/scala
+#mkdir ./subprojects/"$1"/src/scala
 mkdir ./subprojects/"$1"/src/resources
 mkdir ./subprojects/"$1"/test/java
-mkdir ./subprojects/"$1"/test/scala
+#mkdir ./subprojects/"$1"/test/scala
 mkdir ./subprojects/"$1"/test/resources
 
 # Add the gradle sub project to root build

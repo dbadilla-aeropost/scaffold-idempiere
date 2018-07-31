@@ -1,9 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="subprojects/example/src/java"/>
-	<classpathentry kind="lib" path="runtime/bin/felix.jar"/>
-	<classpathentry kind="lib" path="runtime/bundle/felix/commons-fileupload-1.3.2.jar"/>
+	<classpathentry kind="src" path="subprojects/org.compiere.bo/src/kotlin"/>
+	<classpathentry kind="src" path="subprojects/org.idempiere.common/src/java"/>
+	<classpathentry kind="src" path="subprojects/software.hsharp.db.postgresql.provider/src/kotlin"/>
+	<classpathentry kind="src" path="subprojects/org.compiere.db.postgresql.provider/src/java"/>
+	<classpathentry kind="src" path="subprojects/org.compiere.tax/src/java"/>
+	<classpathentry kind="src" path="subprojects/org.compiere.schedule/src/java"/>
+	<classpathentry kind="src" path="subprojects/org.idempiere.orm/src/java"/>
+	<classpathentry kind="src" path="subprojects/org.compiere.db.postgresql.provider/src/kotlin"/>
+	<classpathentry kind="src" path="subprojects/software.hsharp.core.models/src/java"/>
+	<classpathentry kind="src" path="subprojects/org.compiere.wf/src/java"/>
+	<classpathentry kind="src" path="subprojects/org.compiere.crm/src/kotlin"/>
+	<classpathentry kind="src" path="subprojects/org.compiere.bo/src/java"/>
+	<classpathentry kind="src" path="subprojects/org.compiere.lookups/src/java"/>
+	<classpathentry kind="src" path="subprojects/org.compiere.util/src/java"/>
+	<classpathentry kind="src" path="subprojects/org.compiere.product/src/java"/>
+	<classpathentry kind="src" path="subprojects/org.adempiere.osgi/src/java"/>
+	<classpathentry kind="src" path="subprojects/software.hsharp.api.icommon/src/kotlin"/>
+	<classpathentry kind="src" path="subprojects/software.hsharp.business.models/src/java"/>
+	<classpathentry kind="src" path="subprojects/org.compiere.conversionrate/src/java"/>
+	<classpathentry kind="src" path="subprojects/org.compiere.validation/src/java"/>
+	<classpathentry kind="src" path="subprojects/org.compiere.process/src/java"/>
+	<classpathentry kind="src" path="subprojects/org.adempiere.base/src/java"/>
+	<classpathentry kind="src" path="subprojects/org.compiere.rule/src/java"/>
+	<classpathentry kind="src" path="subprojects/org.compiere.server/src/java"/>
+	<classpathentry kind="src" path="subprojects/org.compiere.crm/src/java"/>
+	<classpathentry kind="src" path="subprojects/org.adempiere.exceptions/src/java"/>
+	<classpathentry kind="src" path="subprojects/org.compiere.order/src/java"/>
+	<classpathentry kind="src" path="subprojects/software.hsharp.business.models/src/kotlin"/>
+	<classpathentry kind="src" path="subprojects/software.hsharp.api.icommon/src/java"/>
+	<classpathentry kind="src" path="subprojects/software.hsharp.core.models/src/kotlin"/>
+	<classpathentry kind="src" path="subprojects/org.idempiere.icommon/src/java"/>
+	<classpathentry kind="src" path="subprojects/org.adempiere.install/src/java"/>
+	<classpathentry kind="src" path="subprojects/org.compiere.orm/src/java"/>
+	<classpathentry kind="src" path="subprojects/software.hsharp.db.postgresql.provider/src/java"/>
+	<classpathentry kind="src" path="subprojects/org.compiere.query/src/java"/>
+	<classpathentry kind="src" path="subprojects/org.compiere.model/src/java"/>
+	<classpathentry exported="true" kind="lib" path="runtime/bin/felix.jar"/>
+	<classpathentry exported="true" kind="lib" path="runtime/bundle/felix/commons-fileupload-1.3.2.jar"/>
 	<classpathentry kind="lib" path="runtime/bundle/felix/commons-io-2.5.jar"/>
 	<classpathentry kind="lib" path="runtime/bundle/felix/jansi-1.16.jar"/>
 	<classpathentry kind="lib" path="runtime/bundle/felix/jline-3.3.0.jar"/>

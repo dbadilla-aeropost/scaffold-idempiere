@@ -25,6 +25,8 @@ dependencies {
 
     // https://mvnrepository.com/artifact/org.apache.commons/commons-collections4
     compile group: 'org.apache.commons', name: 'commons-collections4', version: '4.1'
+    // https://mvnrepository.com/artifact/org.osgi/org.osgi.annotation
+    compileOnly group: 'org.osgi', name: 'org.osgi.annotation', version: '6.0.0'
 
 
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"

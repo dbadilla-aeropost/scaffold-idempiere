@@ -1,0 +1,7 @@
+#
+#   COM AEROPOST OMS RESTAPI ORDER
+#
+
+Bundle-Name: Aeropost Orders REST API
+Import-Package: *
+Export-Package: com.aeropost.ome.restapi.order*

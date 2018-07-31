@@ -23,6 +23,9 @@ dependencies {
     compile project(':org.adempiere.osgi')
     compile files('../org.adempiere.osgi/bin')
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    
+    // https://mvnrepository.com/artifact/org.osgi/org.osgi.annotation
+    compileOnly group: 'org.osgi', name: 'org.osgi.annotation', version: '6.0.0'
 }
 buildscript {
     ext.kotlin_version = '1.2.50'

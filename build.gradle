@@ -1,5 +1,5 @@
 /**
- * Shared Gradle build configure for all of the subprojects (Java/Scala).
+ * Shared Gradle build configure for all of the subprojects (Java).
  *
  * settings.gradle
  * ---------------
@@ -39,7 +39,6 @@ subprojects {
     }
 
     apply plugin: 'java'
-    apply plugin: 'scala'
     apply plugin: 'kotlin'
 
     repositories {
@@ -59,8 +58,6 @@ subprojects {
     /* === global dependencies for sub project === */
     //subprojects don't really need to specify their own deps.
     dependencies {
-        //scala std lib (if you use Scala in sub project)
-        compile "org.scala-lang:scala-library:$scala_version"
         //kotlin std lib (if you use Kotlin in sub project)
         compile "org.jetbrains.kotlin:kotlin-osgi-bundle:$kotlin_version"
 
@@ -77,12 +74,11 @@ subprojects {
         compile 'org.glassfish.jersey.containers:jersey-container-servlet:2.25.1'
         compile 'org.glassfish.jersey.media:jersey-media-json-jackson:2.25.1'
         compile "com.fasterxml.jackson.module:jackson-module-kotlin:2.9.+"
-        // https://mvnrepository.com/artifact/biz.aQute.bnd/annotation
-        compile group: 'biz.aQute.bnd', name: 'annotation', version: '2.4.0'
+        // https://mvnrepository.com/artifact/org.osgi/org.osgi.annotation
+        compileOnly group: 'org.osgi', name: 'org.osgi.annotation', version: '6.0.0'
 
         //test runners
         testCompile 'junit:junit:4.12'
-        testCompile "org.scalatest:scalatest_${scala_version.split('\\.')[0..<2].join('.')}:3.0.3"
         testCompile "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version"
         testCompile group: 'com.mchange', name: 'c3p0', version: '0.9.5.2'
         testCompile group: 'org.jfree', name: 'jcommon', version: '1.0.24'
@@ -92,9 +88,6 @@ subprojects {
         main {
             java {
                 srcDirs = ['src/java']
-            }
-            scala {
-                srcDirs = ['src/scala']
             }
             kotlin {
                 srcDirs = ['src/kotlin']
@@ -108,9 +101,6 @@ subprojects {
         test {
             java {
                 srcDirs = ['test/java']
-            }
-            scala {
-                srcDirs = ['test/scala']
             }
             kotlin {
                 srcDirs = ['test/kotlin']
@@ -164,7 +154,6 @@ task syncLibs(type: Copy, dependsOn: clearLibs) {
 /* === root build script config and deps === */
 //use `gradle -q <proj:>properties` to check
 buildscript {
-    ext.scala_version = '2.12.3'
     ext.kotlin_version = '1.2.50'
 
     repositories {
