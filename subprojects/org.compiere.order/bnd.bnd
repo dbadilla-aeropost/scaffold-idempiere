@@ -3,4 +3,5 @@
 #
 Bundle-Name: iDempiere Order
 Import-Package: *
-Export-Package: org.compiere.order*
+Export-Package: org.compiere.order*,\
+                com.aeropost.idempiere.restapi.order*

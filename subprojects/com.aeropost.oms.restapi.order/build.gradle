@@ -1,0 +1,18 @@
+dependencies {
+    // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.4'
+
+    compile project(':org.idempiere.common')
+    compile files('../org.idempiere.common/bin')
+
+    compile project(':org.compiere.order')
+    compile files('../org.compiere.order/bin')
+
+    compile project(':org.compiere.product')
+    compile files('../org.compiere.product/bin')
+    
+     // https://mvnrepository.com/artifact/org.osgi/org.osgi.annotation
+    compile group: 'org.osgi', name: 'org.osgi.annotation', version: '6.0.0'
+    
+
+}

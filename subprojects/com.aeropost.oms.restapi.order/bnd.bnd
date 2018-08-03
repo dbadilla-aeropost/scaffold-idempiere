@@ -4,4 +4,5 @@
 
 Bundle-Name: Aeropost Orders REST API
 Import-Package: *
-Export-Package: com.aeropost.ome.restapi.order*
+Export-Package: \
+	com.aeropost.oms.restapi.order*

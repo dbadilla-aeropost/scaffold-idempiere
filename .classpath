@@ -2,6 +2,7 @@
 <classpath>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="subprojects/example/src/java"/>
+	<classpathentry kind="src" path="subprojects/com.aeropost.oms.restapi.order/src/java"/>
 	<classpathentry kind="src" path="subprojects/org.compiere.bo/src/kotlin"/>
 	<classpathentry kind="src" path="subprojects/org.idempiere.common/src/java"/>
 	<classpathentry kind="src" path="subprojects/software.hsharp.db.postgresql.provider/src/kotlin"/>

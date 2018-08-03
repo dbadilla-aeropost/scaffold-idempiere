@@ -1,5 +1,7 @@
-package com.demo.app.restapi.impl;
-
+/**
+ * 
+ */
+package com.aeropost.oms.restapi.order.impl;
 
 import java.math.BigDecimal;
 
@@ -12,23 +14,39 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 import org.compiere.order.MOrder;
+import org.idempiere.common.util.Env;
 import org.compiere.order.MOrderLine;
 import org.compiere.product.MProduct;
-import org.idempiere.common.util.Env;
 
+//import com.aeropost.oms.restapi.order.service.OrderService;
+//import com.aeropost.oms.restapi.order.service.OrderServiceImpl;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-@Path("status")
-public class Status {
+/**
+ * @author dbadilla
+ *
+ */
 
-    @GET
-    @Produces("text/plain")
-    public String getStatus() {
-        return "!!active!!";
-    }
-    
-    @POST
+@Path("/order")
+public class OrderController {
+	
+	@GET
+    @Produces(MediaType.APPLICATION_JSON)
+	@Consumes(MediaType.TEXT_PLAIN)
+	public String getOrder() {
+		ObjectMapper mapper = new ObjectMapper();
+		String result = "";
+		try {
+			result = mapper.writeValueAsString("Step 1, it works!");
+		} catch (JsonProcessingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return result;
+	}
+	
+	@POST
 	@Produces(MediaType.APPLICATION_JSON)
 	@Consumes(MediaType.APPLICATION_FORM_URLENCODED)
 	public String createOrder(
@@ -52,4 +70,5 @@ public class Status {
 		}
 		return result;
 	}
+
 }
