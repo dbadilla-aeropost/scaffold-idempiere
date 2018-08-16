@@ -1,3 +1,6 @@
+# Idea
+.idea
+
 # Compiled class file
 *.class
 
@@ -111,3 +114,21 @@ subprojects/*/generated
 runtime/bundle/hot-deploy/subprojects/*.jar
 /build.txt
 /.metadata/
+
+**/bin/**
+**/classes/**
+
+subprojects/cnf
+google_oauth2.json
+
+.vagrant/
+
+tmp/
+
+Secrets.kt
+bin_test/
+.idea/modules/*
+
+integration_tests/.idea
+integration_tests/build
+runtime/backup

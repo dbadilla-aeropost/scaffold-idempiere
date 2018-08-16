@@ -10,6 +10,12 @@ dependencies {
 
     compile project(':org.compiere.product')
     compile files('../org.compiere.product/bin')
+
+    compile project(':software.hsharp.db.postgresql.provider')
+    compile files('../software.hsharp.db.postgresql.provider/bin')
+
+    compile project(':org.compiere.db.postgresql.provider')
+    compile files('../org.compiere.db.postgresql.provider/bin')
     
      // https://mvnrepository.com/artifact/org.osgi/org.osgi.annotation
     compile group: 'org.osgi', name: 'org.osgi.annotation', version: '6.0.0'

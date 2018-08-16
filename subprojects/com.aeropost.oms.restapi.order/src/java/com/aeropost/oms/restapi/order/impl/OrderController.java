@@ -22,6 +22,10 @@ import org.compiere.product.MProduct;
 //import com.aeropost.oms.restapi.order.service.OrderServiceImpl;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.idempiere.common.db.Database;
+import pg.org.compiere.db.DB_PostgreSQL;
+import org.idempiere.common.util.DB;
+import org.idempiere.common.db.CConnection;
 
 /**
  * @author dbadilla
@@ -30,6 +34,15 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 @Path("/order")
 public class OrderController {
+
+	public class OrderDTO {
+		private int id;
+		public int getId() { return id; }
+
+		private OrderDTO(MOrder ord) {
+			id = ord.get_ID();
+		}
+	}
 	
 	@GET
     @Produces(MediaType.APPLICATION_JSON)
@@ -38,10 +51,15 @@ public class OrderController {
 		ObjectMapper mapper = new ObjectMapper();
 		String result = "";
 		try {
-			result = mapper.writeValueAsString("Step 1, it works!");
-		} catch (JsonProcessingException e) {
+			new Database().setDatabase(new DB_PostgreSQL());
+			DB.setDBTarget(CConnection.get(null));
+			MOrder ord = new MOrder(Env.getCtx(), 100, "marketplacePOC");			
+			OrderDTO dto = new OrderDTO(ord);
+			result = mapper.writeValueAsString(dto);
+		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+			result = e.toString();
 		}
 		return result;
 	}
