@@ -154,7 +154,7 @@ task syncLibs(type: Copy, dependsOn: clearLibs) {
 /* === root build script config and deps === */
 //use `gradle -q <proj:>properties` to check
 buildscript {
-    ext.kotlin_version = '1.2.50'
+    ext.kotlin_version = '1.2.41'
 
     repositories {
         jcenter()
